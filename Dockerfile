@@ -7,4 +7,4 @@ COPY ./speed-test.py .
 
 # Runtime execution.
 
-CMD ["speed-test.py"]
+CMD ["/speed-test.py"]

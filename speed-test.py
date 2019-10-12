@@ -3,10 +3,11 @@
 import time
 
 file_names = [
-    "/inside/big-file.txt",
-    "/outside/big-file.txt",
+    "/inside/test-file.bin",
+    "/outside/test-file.bin",
+    "/outside/test-file.bin",
+    "/inside/test-file.bin",
 ]
-
 
 for file_name in file_names:
     start_time = time.time()
@@ -20,4 +21,4 @@ for file_name in file_names:
 
     elapsed_time = time.time() - start_time
     byte_rate = byte_count / elapsed_time
-    print("elapsed time: {0}  bps: {1}  File: {2}".format(elapsed_time, byte_rate, file))
+    print("elapsed time: {0}  bps: {1}  File: {2}".format(elapsed_time, byte_rate, file_name))
